@@ -1,8 +1,11 @@
 import React from 'react';
-import { Page, Layout, EmptyState} from "@shopify/polaris";
+import gql from 'graphql-tag';
+import { Mutation } from 'react-apollo';
+import { Page, Layout, EmptyState, Button, Card } from "@shopify/polaris";
 import { ResourcePicker, TitleBar } from '@shopify/app-bridge-react';
 import store from 'store-js';
 import ResourceListWithProducts from './components/ResourceList';
+
 
 const img = 'https://cdn.shopify.com/s/files/1/0757/9955/files/empty-state.svg';
 
