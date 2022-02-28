@@ -113,7 +113,7 @@ class ResourceListWithProducts extends React.Component {
                             const node = nodesById[item.id];
                             if (index === -1) {
                                 this.state.selectedItems.push(item.id);
-                                this.state.selectedNodes[item.id] = node;
+                                // this.state.selectedNodes[item.id] = node;
                             } else {
                               this.state.selectedItems.splice(index, 1);
                                 delete this.state.selectedNodes[item.id];
