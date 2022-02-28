@@ -9,10 +9,14 @@ import ResourceListWithProducts from './components/ResourceList';
 
 const img = 'https://cdn.shopify.com/s/files/1/0757/9955/files/empty-state.svg';
 
+// React.Componentを継承してコンポーネント定義
 class Index extends React.Component {
+  // コンストラクタ
   state = { open: false };
+  // JSX形式で書く
   render() {
     // A constant that defines your app's empty state
+    // emptyStateは最初false
     const emptyState = !store.get('ids');
     return (
       <Page>
@@ -31,6 +35,7 @@ class Index extends React.Component {
         />
         {emptyState ? ( // Controls the layout of your app's empty state
           <Layout>
+            {/* 空の状態を表示 */}
             <EmptyState
               heading="Discount your products temporarily"
               action={{
